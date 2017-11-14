@@ -50,15 +50,45 @@ define :piano do
 end
 
 define :piano2 do
-  use_synth :piano
+  use_synth :fm
+  use_synth_defaults amp: 0.3
   with_fx :reverb do
     measure1 = [[:Ds5, :As4, :Ds4], [:Ds5, :As4, :Ds4], [:Ds5, :As4, :Ds4], [:Cs5, :As4, :Cs4]]
+    measure2 = [[:B4, :Fs4, :B3], [:Ds5, :Ds4, :B3], [:Ds5, :Ds4, :B3], [:Cs5, :Cs4, :B3]]
+    measure3 = [[:Cs5, :Fs4, :Cs4], [:Cs5, :Fs4, :Cs4], [:Cs5, :Fs4, :Cs4], [:Cs5, :Fs4, :Cs4]]
+    measure4 = [[:Cs5, :Gs4, :Cs4], [:Cs5, :Gs4, :Cs4], [:Cs5, :Gs4, :Cs4], [:Cs5, :Gs4, :Cs4]]
     
     measure1.each do |m|
-      play m
-      sleep 0.5
-      play m
-      sleep 0.5
+      play m, release: 1.5
+      sleep 0.75
+    end
+    measure2.each do |m|
+      play m, release: 1.5
+      sleep 0.75
+    end
+    measure3.each do |m|
+      play m, release: 1.5
+      sleep 0.75
+    end
+    measure4.each do |m|
+      play m, release: 1.5
+      sleep 0.75
+    end
+    measure1.each do |m|
+      play m, release: 1.5
+      sleep 0.75
+    end
+    measure2.each do |m|
+      play m, release: 1.5
+      sleep 0.75
+    end
+    measure3.each do |m|
+      play m, release: 1.5
+      sleep 0.75
+    end
+    measure4.each do |m|
+      play m, release: 1.5
+      sleep 0.75
     end
   end
 end

@@ -70,7 +70,7 @@ end
 
 
 define :start_lead do
-  use_synth :prophet
+  use_synth :pretty_bell
   use_synth_defaults note: 60, amp: 0.4
   use_bpm 90
   with_fx :reverb do
@@ -81,7 +81,7 @@ end
 
 
 
-
+start_lead
 
 
 
