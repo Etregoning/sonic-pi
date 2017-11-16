@@ -130,6 +130,13 @@ define :vocal_piano2 do
         play :As7
         sleep 0.5
       end
+      2.times do
+        sleep 6
+        4.times do
+          play :As7, amp: 0.5
+          sleep 0.5
+        end
+      end
     end
   end
   guitar

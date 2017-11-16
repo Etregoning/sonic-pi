@@ -16,11 +16,10 @@ end
 define :drum_snare do
   in_thread(name: :drum_snare) do
     use_octave 0
-    sample :drum_roll, finish: 0.1
-    sleep 0.75
-    sample :drum_snare_hard
-    sleep 2
-    18.times do
+    ##| sample :drum_roll, finish: 0.1
+    ##| Drum roll doesnt sound right, consider making a custom one?
+    sleep 3
+    31.times do
       sample :drum_bass_soft
       sleep 1
       sample :drum_snare_soft
