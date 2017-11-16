@@ -1,4 +1,4 @@
-# Entry point + piano + guitar buffer
+# Piano + guitar buffer
 define :piano do
   use_synth :piano
   with_fx :reverb do

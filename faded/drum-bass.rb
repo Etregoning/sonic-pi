@@ -1,4 +1,4 @@
-#Drum + Bass buffer
+# Drum + Bass buffer
 
 
 define :drum_short do
@@ -16,8 +16,6 @@ end
 define :drum_snare do
   in_thread(name: :drum_snare) do
     use_octave 0
-    ##| sample :drum_roll, finish: 0.1
-    ##| Drum roll doesnt sound right, consider making a custom one?
     sleep 3
     31.times do
       sample :drum_bass_soft
