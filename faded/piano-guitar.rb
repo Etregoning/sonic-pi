@@ -1,4 +1,4 @@
-# Entry point + piano buffer
+# Entry point + piano + guitar buffer
 define :piano do
   use_synth :piano
   with_fx :reverb do
@@ -87,13 +87,3 @@ define :guitar do
     end
   end
 end
-
-define :start_song do
-  use_bpm 90
-  piano
-  fm_piano
-  start_lead
-end
-
-
-start_song

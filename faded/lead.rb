@@ -3,7 +3,7 @@
 define :lead do
   use_synth :prophet
   use_synth_defaults note: 60, amp: 0.4
-  with_fx :reverb do
+  with_fx :reverb, room: 0.9 do
     measure1 = [:Fs5, :Fs5, :Fs5, :Fs5, :Fs5, :Fs5, :Fs5, :As5, :As5, :As5]
     release1 = [1, 1, 1, 1, 1, 1, 0.5, 1, 0.5, 1]
     timing1 = [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.25, 0.25, 0.25, 0.25]
@@ -34,7 +34,7 @@ end
 define :lead9_to_11 do
   use_synth :prophet
   use_synth_defaults note: 60, amp: 0.4
-  with_fx :reverb do
+  with_fx :reverb, room: 0.9  do
     measure9 = [:Fs5, :Fs5, :Fs5, :Fs5, :AS5, :As5, :Fs6, :Fs6, :F6, :F6]
     release9 = [1, 1, 1, 1, 1, 0.5, 1, 1, 1]
     timing9 = [0.5, 0.5, 0.5, 0.5, 0.5, 0.25, 0.5, 0.25, 0.25, 0.25]
@@ -61,7 +61,7 @@ end
 define :lead12_to_16 do
   use_synth :prophet
   use_synth_defaults note: 60, amp: 0.4
-  with_fx :reverb do
+  with_fx :reverb, room: 0.9 do
     measure12 = [:F5, :F5, :F5, :F5, :Gs5, :F5]
     release12 = [1, 1, 1, 1, 2, 2]
     timing12 = [0.5, 0.5, 0.5, 0.5, 1, 1]
@@ -82,6 +82,7 @@ end
 
 
 define :start_lead do
+  sleep 2
   drum_snare
   sleep 1
   bass

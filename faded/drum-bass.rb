@@ -4,7 +4,7 @@
 define :drum_short do
   in_thread(name: :drum_cym) do
     use_octave 0
-    5.times do
+    10.times do
       sample :drum_heavy_kick, amp: 0.4
       sample :drum_snare_soft, amp: 0.5
       sleep 2
@@ -19,8 +19,8 @@ define :drum_snare do
     sample :drum_roll, finish: 0.1
     sleep 0.75
     sample :drum_snare_hard
-    sleep 1.5
-    14.times do
+    sleep 2
+    18.times do
       sample :drum_bass_soft
       sleep 1
       sample :drum_snare_soft

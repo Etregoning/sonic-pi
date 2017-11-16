@@ -35,7 +35,7 @@ end
 define :vocal_piano do
   use_synth :piano
   use_octave -2
-  with_fx :reverb do
+  with_fx :reverb, room: 0.8 do
     measure1 = [:Fs7, :Fs7, :Ds7, :Fs7, :Ds7, :Fs7, :Gs7]
     timing1 = [0.5, 0.5, 0.5, 0.5]
     measure2 = [:As7, :Fs7, :Fs7, :Cs7, :As7]
@@ -88,7 +88,7 @@ end
 
 define :vocal_piano2 do
   in_thread(name: :vocal_piano2) do
-    with_fx :reverb do
+    with_fx :reverb, room: 0.8 do
       measure1 = [:Fs7, :Gs7, :Gs7, :Gs7, :Gs7, :Fs7, :Fs7]
       timing1 = [0.25, 0.25, 0.5, 0.5, 0.5, 0.5, 0.5]
       release1 = [0.5, 0.5, 1, 1, 1, 1, 1]
@@ -107,8 +107,8 @@ define :vocal_piano2 do
         play :As7
         sleep 0.5
       end
-      sample :drum_heavy_kick, amp: 0.5
-      sample :drum_cymbal_open, amp: 0.25
+      sample :drum_heavy_kick, amp: 0.4
+      sample :drum_cymbal_open, amp: 0.1
       sleep 1
       drum_short
       measure1.zip(timing1, release1) do |m, t, r|
