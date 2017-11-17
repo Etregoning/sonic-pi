@@ -52,10 +52,12 @@ define :vocal_piano do
       sleep t
     end
     sleep 2.5
-    3.times do
+    2.times do
       play :Fs7
       sleep 0.5
     end
+    play :F7
+    sleep 0.5
     play :F7
     sleep 2
     measure4.each do |m|
@@ -102,7 +104,7 @@ define :vocal_piano2 do
         play :As7
         sleep 0.5
       end
-      sleep 4
+      sleep 5
       4.times do
         play :As7
         sleep 0.5
@@ -129,13 +131,6 @@ define :vocal_piano2 do
       4.times do
         play :As7
         sleep 0.5
-      end
-      2.times do
-        sleep 6
-        4.times do
-          play :As7, amp: 0.5
-          sleep 0.5
-        end
       end
     end
   end
