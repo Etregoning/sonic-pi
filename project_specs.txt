@@ -1,0 +1,39 @@
+Sonic Pi is a free synthesizer program that was written by Sam Aaron at the University of Cambridge in England. The aim of Sonic Pi is to offer a platform in which the user can write code to make music! The cool thing about Sonic Pi is that you don't really need any experience in music or coding to get started, however, the more you learn, the more you will be able to do in Sonic Pi!
+
+Sonic Pi is considered it's own language (SonicPi Lang), and it features it's own syntax and commands,  but it was written on top of the Ruby language, so you can also use any Ruby syntax within your song. Although there are many different ways you can put a song together in Sonic Pi, the aim of this project is for you to create a song in the most programmatically correct way as possible. With that being said, here are the requirements of the project:
+
+Mandatory Part
+- General requirements
+-- You may either write your own song, or write a cover of an already existing song
+-- If you are covering a song, you do not need to cover the entire song, but your song should be at least 1 minute long
+-- Your song must contain at least 3 instruments -- A good example would be:  A backing track, a melody, and a drum beat, but you are free to choose your own!
+-- Your song must have different parts. You cannot just loop over the same notes for the entire song! This is okay for the backing track and drum beat, but not every instrument!
+
+- Code Requirements
+-- The entry point of your song must be in a file named 'main' (main.rb)
+-- If using multiple buffers, you must put a comment at the top of the main telling how many buffers are included in the song, and give the names of the buffers.
+-- You must put a comment at the top of each file explaining what part of the song that file is responsible for
+-- All code must be inside of functions, except for function calls. This means no global variables!
+-- You must make use of loops. Any type of loops are fine!
+-- Your song must have an end condition, no infinite loops! This means the song must stop on it's own, without you pressing any buttons.
+-- You must make your own loops. This means you cannot use any samples that start with the word "loop"
+
+
+
+Bonus
+
+
+slider 1-5 per extra instrument? -- 1 point each?
+-- Use of more than 3 instruments 
+
+
+-- Use of Ruby code that isn't part of SonicPi Lang (anything that isn't included in the sonic pi docs) -  5 points
+-- Use of multiple buffers - 2 points
+-- Use of cue and sync with threads - 2  points
+-- Use of synth and fx options such as 'amp', 'mix', 'cutoff', etc .5 points - 3  points
+-- Outstanding job at syncing tracks together for smooth transitions between instruments - 3 points
+
+
+slider 1-5? 1 point each?
+-- Go above and beyond the scope of the project -- Explain to your corrector why you think you deserve extra bonus points
+
